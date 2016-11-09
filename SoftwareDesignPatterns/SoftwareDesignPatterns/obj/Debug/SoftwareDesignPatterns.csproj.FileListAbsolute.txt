@@ -1,0 +1,5 @@
+E:\Projects\SoftwareDesignPatterns\SoftwareDesignPatterns\SoftwareDesignPatterns\bin\Debug\SoftwareDesignPatterns.dll
+E:\Projects\SoftwareDesignPatterns\SoftwareDesignPatterns\SoftwareDesignPatterns\bin\Debug\SoftwareDesignPatterns.pdb
+E:\Projects\SoftwareDesignPatterns\SoftwareDesignPatterns\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.csprojResolveAssemblyReference.cache
+E:\Projects\SoftwareDesignPatterns\SoftwareDesignPatterns\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.dll
+E:\Projects\SoftwareDesignPatterns\SoftwareDesignPatterns\SoftwareDesignPatterns\obj\Debug\SoftwareDesignPatterns.pdb
