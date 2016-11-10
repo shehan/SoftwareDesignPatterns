@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SoftwareDesignPatterns.Decorator;
 using SoftwareDesignPatterns.Oberver;
-
+using SoftwareDesignPatterns.Command;
 
 namespace Output
 {
@@ -13,9 +9,47 @@ namespace Output
     {
         static void Main(string[] args)
         {
-            // DecoratorPattern();
+            CommandPattern();
 
-            ObserverPattern();
+            //DecoratorPattern();
+
+            //ObserverPattern();
+        }
+
+        static void CommandPattern()
+        {
+            Waiter waiter = new Waiter();
+
+            Pizza pizza1 = new Pizza(new string[1] { "cheese" });
+            PizzaCommand pizzaCommand1 = new PizzaCommand(pizza1);
+            waiter.AddOrder(pizzaCommand1);
+
+            Steak steak = new Steak(Steak.SteakType.TBone, Steak.SteakPreperation.WellDone);
+            SteakCommand steakCommand = new SteakCommand(steak);
+            waiter.AddOrder(steakCommand);
+
+            Wings wing1 = new Wings(Wings.WingFlavor.BBQ, 10);
+            WingsCommand wingsCommand1 = new WingsCommand(wing1);
+            waiter.AddOrder(wingsCommand1);
+
+            Pizza pizza2 = new Pizza(new string[4] { "chicken", "bacon","ham","pepperoni" });
+            PizzaCommand pizzaCommand2 = new PizzaCommand(pizza2);
+            waiter.AddOrder(pizzaCommand2);
+
+            Wings wing2 = new Wings(Wings.WingFlavor.HotGarlic,20);
+            WingsCommand wingsCommand2 = new WingsCommand(wing2);
+            waiter.AddOrder(wingsCommand2);
+
+            Wings wing3 = new Wings(Wings.WingFlavor.SweetChili, 10);
+            WingsCommand wingsCommand3 = new WingsCommand(wing3);
+            waiter.AddOrder(wingsCommand3);
+
+            waiter.ExecuteOrder();
+
+            Console.WriteLine("**********************");
+            Console.ReadLine();
+
+
         }
 
 
@@ -52,8 +86,7 @@ namespace Output
         {
             Console.WriteLine("-----Decorator Pattern-----");
 
-            IChristmasTree treeA = new GreenChristmasTree();
-            treeA.Display();
+            IChristmasTree treeA = new GreenChristmasTree();       
 
             LightsDecorator d1 = new LightsDecorator();
             TopperDecorator d2 = new TopperDecorator();
@@ -65,12 +98,12 @@ namespace Output
             Console.WriteLine("**********");
 
             IChristmasTree treeB = new WhiteChristmasTree();
-            treeB.Display();
+           
             TopperDecorator d3 = new TopperDecorator();
             GiftDecorator d4 = new GiftDecorator();
 
             d3.AddTreeDecoration(treeB);
-            d4.AddTreeDecoration(d3);
+            d4.AddTreeDecoration(treeB);
             Console.WriteLine(d4.Display());
 
             Console.WriteLine("**********");
