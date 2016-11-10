@@ -42,6 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Command\Wings.cs" />
+    <Compile Include="Command\WingsCommand.cs" />
+    <Compile Include="Command\Pizza.cs" />
+    <Compile Include="Command\Steak.cs" />
+    <Compile Include="Command\SteakCommand.cs" />
+    <Compile Include="Command\PizzaCommand.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\Waiter.cs" />
     <Compile Include="Decorator\GiftDecorator.cs" />
     <Compile Include="Decorator\GreenChristmasTree.cs" />
     <Compile Include="Decorator\IChristmasTree.cs" />
@@ -57,6 +65,10 @@
     <Compile Include="Oberver\Server.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
