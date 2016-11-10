@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Command\Wings.cs" />
     <Compile Include="Command\WingsCommand.cs" />
     <Compile Include="Command\Pizza.cs" />
@@ -64,9 +63,6 @@
     <Compile Include="Oberver\IServer.cs" />
     <Compile Include="Oberver\Server.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
