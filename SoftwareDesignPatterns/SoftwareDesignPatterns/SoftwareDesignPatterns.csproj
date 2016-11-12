@@ -41,6 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\Analog.cs" />
+    <Compile Include="Adapter\AnalogToDigitalAdapter.cs" />
+    <Compile Include="Adapter\Digital.cs" />
+    <Compile Include="Adapter\IAdapter.cs" />
+    <Compile Include="Builder\Burger.cs" />
+    <Compile Include="Builder\Cook.cs" />
+    <Compile Include="Builder\IBurgerBuilder.cs" />
+    <Compile Include="Builder\BeefBurger.cs" />
+    <Compile Include="Builder\ChickenBurger.cs" />
     <Compile Include="Command\Wings.cs" />
     <Compile Include="Command\WingsCommand.cs" />
     <Compile Include="Command\Pizza.cs" />

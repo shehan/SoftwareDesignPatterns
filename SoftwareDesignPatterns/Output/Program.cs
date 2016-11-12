@@ -2,6 +2,8 @@
 using SoftwareDesignPatterns.Decorator;
 using SoftwareDesignPatterns.Oberver;
 using SoftwareDesignPatterns.Command;
+using SoftwareDesignPatterns.Adapter;
+using SoftwareDesignPatterns.Builder;
 
 namespace Output
 {
@@ -9,11 +11,54 @@ namespace Output
     {
         static void Main(string[] args)
         {
-            CommandPattern();
+            BuilderPattern();
+
+            //AdapterPattern();
+
+            //CommandPattern();
 
             //DecoratorPattern();
 
             //ObserverPattern();
+        }
+
+        static void BuilderPattern()
+        {
+            Console.WriteLine("Builder Pattern");
+            Console.WriteLine("---------------");
+
+            IBurgerBuilder chicken = new ChickenBurger();
+            IBurgerBuilder beef = new BeefBurger();
+
+            Console.WriteLine("Cooking - Chicken Burger");
+            Cook cook = new Cook(chicken);
+            cook.GetMeal();
+
+            Console.WriteLine("Cooking - Beef Burger");
+            cook = new Cook(beef);
+            cook.GetMeal();
+
+
+
+            Console.WriteLine("**********************");
+            Console.ReadLine();
+
+        }
+
+        static void AdapterPattern()
+        {
+            Console.WriteLine("Adapter Pattern");
+            Console.WriteLine("---------------");
+
+            Analog analogValue = new Analog(new decimal(3.142));
+
+           // Digital digitalValue = new Digital(20);            
+
+            IAdapter adapter = new AnalogToDigitalAdapter();
+            adapter.ConvertToDigital(analogValue);
+
+            Console.WriteLine("**********************");
+            Console.ReadLine();
         }
 
         static void CommandPattern()
