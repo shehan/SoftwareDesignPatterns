@@ -65,6 +65,13 @@
     <Compile Include="Decorator\TopperDecorator.cs" />
     <Compile Include="Decorator\TreeDecorator.cs" />
     <Compile Include="Decorator\WhiteChristmasTree.cs" />
+    <Compile Include="Factory\FoodFactory.cs" />
+    <Compile Include="Factory\FriedChicken.cs" />
+    <Compile Include="Factory\GrilledChicken.cs" />
+    <Compile Include="Factory\IFood.cs" />
+    <Compile Include="Factory\IFoodFactory.cs" />
+    <Compile Include="Factory\SpicyFriedChicken.cs" />
+    <Compile Include="Factory\RochesterFriedChicken.cs" />
     <Compile Include="Oberver\ClientA.cs" />
     <Compile Include="Oberver\ClientB.cs" />
     <Compile Include="Oberver\ClientC.cs" />

@@ -4,6 +4,7 @@ using SoftwareDesignPatterns.Oberver;
 using SoftwareDesignPatterns.Command;
 using SoftwareDesignPatterns.Adapter;
 using SoftwareDesignPatterns.Builder;
+using SoftwareDesignPatterns.Factory;
 
 namespace Output
 {
@@ -11,7 +12,9 @@ namespace Output
     {
         static void Main(string[] args)
         {
-            BuilderPattern();
+            FactoryPattern();
+
+            //BuilderPattern();
 
             //AdapterPattern();
 
@@ -19,7 +22,36 @@ namespace Output
 
             //DecoratorPattern();
 
-            //ObserverPattern();
+           // ObserverPattern();
+        }
+
+        static void FactoryPattern()
+        {
+            Console.WriteLine("Factory Pattern");
+            Console.WriteLine("---------------");
+
+            IFood food;
+
+            FoodFactory factory = new FoodFactory();
+
+            food = factory.OrderFood("RochesterFriedChicken");
+            food.GetFood();
+
+            Console.WriteLine(Environment.NewLine);
+
+            food = factory.OrderFood("SpicyFriedChicken");
+            food.GetFood();
+
+            Console.WriteLine(Environment.NewLine);
+
+            food = factory.OrderFood("FriedChicken");
+            food.GetFood();
+
+            Console.WriteLine(Environment.NewLine);
+
+            Console.WriteLine("**********************");
+            Console.ReadLine();
+
         }
 
         static void BuilderPattern()

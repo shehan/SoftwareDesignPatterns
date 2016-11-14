@@ -21,8 +21,7 @@
         }
 
         public void Execute()
-        {
-            //   Console.WriteLine(string.Format("Pouring beer: {0). Quantity: {1}"), _brand,_quantity);
+        {           
             _wings.Cook();
             _isCompleted = true;
         }

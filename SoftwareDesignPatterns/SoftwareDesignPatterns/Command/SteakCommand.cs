@@ -22,7 +22,6 @@
 
         public void Execute()
         {
-            // Console.WriteLine(string.Format("Making a {0} {1} steak"),_preperation,_type);
             _steak.Cook();
             _iscompleted = true;
         }

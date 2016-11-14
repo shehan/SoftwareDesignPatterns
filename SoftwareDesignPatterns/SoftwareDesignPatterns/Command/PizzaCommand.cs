@@ -21,8 +21,7 @@
         }
 
         public void Execute()
-        {
-            //Console.WriteLine(string.Format("Making a pizza with toppings {0)"), _toppings);
+        {            
             _pizza.Cook();
             _isCompleted = true;
         }

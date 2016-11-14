@@ -2,7 +2,6 @@
 {
     public interface IClient
     {
-        void notify(string message);
-        
+        void notify(string message);        
     }
 }

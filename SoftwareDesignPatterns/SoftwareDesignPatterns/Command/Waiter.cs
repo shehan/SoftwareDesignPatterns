@@ -12,7 +12,7 @@ namespace SoftwareDesignPatterns.Command
             if (_commandList == null)
                 _commandList = new List<ICommand>();
 
-            _commandList.Add(order);
+            _commandList.Add(order);    
         }
 
         public void ExecuteOrder()
