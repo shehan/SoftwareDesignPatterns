@@ -4,3 +4,4 @@ The project contains C# examples for the following patterns:
 3. Command
 4. Adapter
 5. Builder
+6. Factory
