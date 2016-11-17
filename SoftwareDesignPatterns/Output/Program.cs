@@ -5,6 +5,7 @@ using SoftwareDesignPatterns.Command;
 using SoftwareDesignPatterns.Adapter;
 using SoftwareDesignPatterns.Builder;
 using SoftwareDesignPatterns.Factory;
+using SoftwareDesignPatterns.Template;
 
 namespace Output
 {
@@ -12,7 +13,9 @@ namespace Output
     {
         static void Main(string[] args)
         {
-            FactoryPattern();
+            TemplatePattern();
+
+            //FactoryPattern();
 
             //BuilderPattern();
 
@@ -23,6 +26,25 @@ namespace Output
             //DecoratorPattern();
 
            // ObserverPattern();
+        }
+
+        static void TemplatePattern()
+        {
+            Console.WriteLine("Template Pattern");
+            Console.WriteLine("---------------");
+
+            ATM deposit = new DepositTransaction();
+            deposit.PerformTransaction();
+
+            ATM withdraw = new WithdrawalTranaction();
+            withdraw.PerformTransaction();
+
+
+            Console.WriteLine(Environment.NewLine);
+
+            Console.WriteLine("**********************");
+            Console.ReadLine();
+
         }
 
         static void FactoryPattern()
