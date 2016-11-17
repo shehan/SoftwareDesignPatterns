@@ -6,6 +6,7 @@ using SoftwareDesignPatterns.Adapter;
 using SoftwareDesignPatterns.Builder;
 using SoftwareDesignPatterns.Factory;
 using SoftwareDesignPatterns.Template;
+using SoftwareDesignPatterns.Proxy;
 
 namespace Output
 {
@@ -13,7 +14,9 @@ namespace Output
     {
         static void Main(string[] args)
         {
-            TemplatePattern();
+            ProxyPattern();
+
+            //TemplatePattern();
 
             //FactoryPattern();
 
@@ -28,6 +31,22 @@ namespace Output
            // ObserverPattern();
         }
 
+        static void ProxyPattern()
+        {
+            Console.WriteLine("Proxy Pattern");
+            Console.WriteLine("---------------");
+
+            IReal real = new Proxy();
+            real.ProcessRequest("Hello World!");
+
+
+            Console.WriteLine(Environment.NewLine);
+
+            Console.WriteLine("**********************");
+            Console.ReadLine();
+
+        }
+
         static void TemplatePattern()
         {
             Console.WriteLine("Template Pattern");
@@ -38,7 +57,7 @@ namespace Output
 
             ATM withdraw = new WithdrawalTranaction();
             withdraw.PerformTransaction();
-
+    
 
             Console.WriteLine(Environment.NewLine);
 

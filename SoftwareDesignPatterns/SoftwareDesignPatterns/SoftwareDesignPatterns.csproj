@@ -79,6 +79,9 @@
     <Compile Include="Oberver\IServer.cs" />
     <Compile Include="Oberver\Server.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy\IReal.cs" />
+    <Compile Include="Proxy\Proxy.cs" />
+    <Compile Include="Proxy\Real.cs" />
     <Compile Include="Template\ATM.cs" />
     <Compile Include="Template\DepositTransaction.cs" />
     <Compile Include="Template\WithdrawalTranaction.cs" />
