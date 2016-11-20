@@ -10,7 +10,14 @@ namespace SoftwareDesignPatterns.Template
     {
         public override void Transaction()
         {
-            Console.WriteLine("Deposit Transaction");
+            Console.WriteLine("Deposit Transaction - Start");
+
+            AccecptCash();
+        }
+
+        private void AccecptCash()
+        {
+            Console.WriteLine("Deposit Transaction - Accecpt Cash");
         }
        
     }

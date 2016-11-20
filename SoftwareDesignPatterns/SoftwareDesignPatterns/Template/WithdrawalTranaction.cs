@@ -10,7 +10,21 @@ namespace SoftwareDesignPatterns.Template
     {
         public override void Transaction()
         {
-            Console.WriteLine("Withdrawal Transaction");
+            Console.WriteLine("Withdrawal Transaction - Start");
+
+            GetAmount();
+            ProvideCash();
+
+        }
+
+        private void GetAmount()
+        {
+            Console.WriteLine("Withdrawal Transaction - Get Amount");
+        }
+
+        private void ProvideCash()
+        {
+            Console.WriteLine("Withdrawal Transaction - Provide Cash");
         }
     }
 }

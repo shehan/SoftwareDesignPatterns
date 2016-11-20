@@ -14,9 +14,9 @@ namespace Output
     {
         static void Main(string[] args)
         {
-            ProxyPattern();
+            //ProxyPattern();
 
-            //TemplatePattern();
+            TemplatePattern();
 
             //FactoryPattern();
 
@@ -52,9 +52,11 @@ namespace Output
             Console.WriteLine("Template Pattern");
             Console.WriteLine("---------------");
 
+            Console.WriteLine("*****ATM - Deposit Transaction*****");
             ATM deposit = new DepositTransaction();
             deposit.PerformTransaction();
 
+            Console.WriteLine("*****ATM - Withdrawal Transaction*****");
             ATM withdraw = new WithdrawalTranaction();
             withdraw.PerformTransaction();
     
