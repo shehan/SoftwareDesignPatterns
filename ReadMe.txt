@@ -7,3 +7,4 @@ The project contains C# examples for the following patterns:
 6. Factory
 7. Template
 8. Proxy
+9. Iterator
