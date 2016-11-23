@@ -1,10 +1,11 @@
 The project contains C# examples for the following patterns:
-1. Decorator
-2. Observer
-3. Command
-4. Adapter
-5. Builder
-6. Factory
-7. Template
-8. Proxy
-9. Iterator
+01. Decorator
+02. Observer
+03. Command
+04. Adapter
+05. Builder
+06. Factory
+07. Template
+08. Proxy
+09. Iterator
+10. Composite
